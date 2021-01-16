@@ -87,6 +87,7 @@ const WebARTest = () => {
       .on('end', () => {
         overlayElement.style.display = 'none';
       });
+    view3d.xr.addSession(floorSession);
   }, [canvasElement]);
 
   return (
